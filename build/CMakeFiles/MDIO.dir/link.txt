@@ -1,0 +1,2 @@
+avr-ar qc libraries/libMDIO.a CMakeFiles/MDIO.dir/lib/MDIO_Program.c.obj
+E:/WinAVR/bin/avr-ranlib.exe libraries/libMDIO.a

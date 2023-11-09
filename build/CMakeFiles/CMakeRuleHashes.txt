@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+062aaa38eea7acd48812931b422f1e18 CMakeFiles/snake_effect
+fc19044031994637801aef5518b16d79 binary_report.txt
+cb6a2b8f03921fc53e2ac7cd2b04ab79 snake_effect.hex

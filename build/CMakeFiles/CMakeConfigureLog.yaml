@@ -1,0 +1,227 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The target system is: Generic -  - avr
+      The host system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: E:/WinAVR/bin/avr-gcc.exe 
+      Build flags: -mmcu=atmega32;-DF_CPU=8000000;-std=gnu99;-O2;-Wall
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/HP/Desktop/SE_using_CMake/build/CMakeFiles/3.28.0-rc4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      avr-gcc.exe (WinAVR 20100110) 4.3.3
+      Copyright (C) 2008 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/HP/Desktop/SE_using_CMake/build/CMakeFiles/CMakeScratch/TryCompile-46g2xm"
+      binary: "C:/Users/HP/Desktop/SE_using_CMake/build/CMakeFiles/CMakeScratch/TryCompile-46g2xm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mmcu=atmega32 -DF_CPU=8000000 -std=gnu99 -O2 -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/HP/Desktop/SE_using_CMake/build/CMakeFiles/CMakeScratch/TryCompile-46g2xm'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/make.exe -f Makefile cmTC_bdb1c/fast
+        C:/MinGW/bin/make.exe  -f CMakeFiles/cmTC_bdb1c.dir/build.make CMakeFiles/cmTC_bdb1c.dir/build
+        make[1]: Entering directory 'C:/Users/HP/Desktop/SE_using_CMake/build/CMakeFiles/CMakeScratch/TryCompile-46g2xm'
+        Building C object CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj
+        E:/WinAVR/bin/avr-gcc.exe   -mmcu=atmega32 -DF_CPU=8000000 -std=gnu99 -O2 -Wall    -v -o CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        Target: avr
+        Configured with: ../gcc-4.3.3/configure --enable-win32-registry=WinAVR-20100110 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20100110' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse'
+        Thread model: single
+        gcc version 4.3.3 (WinAVR 20100110) 
+        COLLECT_GCC_OPTIONS='-mmcu=atmega32' '-DF_CPU=8000000' '-std=gnu99' '-O2' '-Wall' '-v' '-o' 'CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj' '-c'
+         e:/winavr/bin/../libexec/gcc/avr/4.3.3/cc1.exe -quiet -v -imultilib avr5 -iprefix e:\\winavr\\bin\\../lib/gcc/avr/4.3.3/ -DF_CPU=8000000 C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mmcu=atmega32 -auxbase-strip CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj -O2 -Wall -std=gnu99 -version -o C:\\Users\\HP\\AppData\\Local\\Temp/ccJNPI36.s
+        ignoring nonexistent directory "e:/winavr/lib/gcc/../../avr/sys-include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         e:\\winavr\\bin\\../lib/gcc/avr/4.3.3/include
+         e:\\winavr\\bin\\../lib/gcc/avr/4.3.3/include-fixed
+         e:/winavr/lib/gcc/../../lib/gcc/avr/4.3.3/include
+         e:/winavr/lib/gcc/../../lib/gcc/avr/4.3.3/include-fixed
+         e:/winavr/lib/gcc/../../avr/include
+        End of search list.
+        GNU C (WinAVR 20100110) version 4.3.3 (avr)
+        	compiled by GNU C version 3.4.5 (mingw-vista special r3), GMP version 4.2.3, MPFR version 2.4.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 61d68a374065d489330774d2533cbbdf
+        COLLECT_GCC_OPTIONS='-mmcu=atmega32' '-DF_CPU=8000000' '-std=gnu99' '-O2' '-Wall' '-v' '-o' 'CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj' '-c'
+         e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/as.exe -mmcu=atmega32 -o CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj C:\\Users\\HP\\AppData\\Local\\Temp/ccJNPI36.s
+        COMPILER_PATH=e:/winavr/bin/../libexec/gcc/avr/4.3.3/;e:/winavr/bin/../libexec/gcc/;e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/
+        LIBRARY_PATH=e:/winavr/bin/../lib/gcc/avr/4.3.3/avr5/;e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/;e:/winavr/bin/../lib/gcc/avr/4.3.3/;e:/winavr/bin/../lib/gcc/;e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/
+        COLLECT_GCC_OPTIONS='-mmcu=atmega32' '-DF_CPU=8000000' '-std=gnu99' '-O2' '-Wall' '-v' '-o' 'CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj' '-c'
+        Linking C executable cmTC_bdb1c
+        E:/WinAVR/bin/avr-gcc.exe -mmcu=atmega32 -DF_CPU=8000000 -std=gnu99 -O2 -Wall   -v "CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj"  -o cmTC_bdb1c 
+        Using built-in specs.
+        Target: avr
+        Configured with: ../gcc-4.3.3/configure --enable-win32-registry=WinAVR-20100110 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20100110' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse'
+        Thread model: single
+        gcc version 4.3.3 (WinAVR 20100110) 
+        COMPILER_PATH=e:/winavr/bin/../libexec/gcc/avr/4.3.3/;e:/winavr/bin/../libexec/gcc/;e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/
+        LIBRARY_PATH=e:/winavr/bin/../lib/gcc/avr/4.3.3/avr5/;e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/;e:/winavr/bin/../lib/gcc/avr/4.3.3/;e:/winavr/bin/../lib/gcc/;e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/
+        COLLECT_GCC_OPTIONS='-mmcu=atmega32' '-DF_CPU=8000000' '-std=gnu99' '-O2' '-Wall' '-v' '-o' 'cmTC_bdb1c'
+         e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/ld.exe -m avr5 -o cmTC_bdb1c e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o -Le:/winavr/bin/../lib/gcc/avr/4.3.3/avr5 -Le:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5 -Le:/winavr/bin/../lib/gcc/avr/4.3.3 -Le:/winavr/bin/../lib/gcc -Le:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc
+        make[1]: Leaving directory 'C:/Users/HP/Desktop/SE_using_CMake/build/CMakeFiles/CMakeScratch/TryCompile-46g2xm'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [e:/winavr/bin/../lib/gcc/avr/4.3.3/include]
+          add: [e:/winavr/bin/../lib/gcc/avr/4.3.3/include-fixed]
+          add: [e:/winavr/lib/gcc/../../lib/gcc/avr/4.3.3/include]
+          add: [e:/winavr/lib/gcc/../../lib/gcc/avr/4.3.3/include-fixed]
+          add: [e:/winavr/lib/gcc/../../avr/include]
+        end of search list found
+        collapse include dir [e:/winavr/bin/../lib/gcc/avr/4.3.3/include] ==> [E:/WinAVR/lib/gcc/avr/4.3.3/include]
+        collapse include dir [e:/winavr/bin/../lib/gcc/avr/4.3.3/include-fixed] ==> [E:/WinAVR/lib/gcc/avr/4.3.3/include-fixed]
+        collapse include dir [e:/winavr/lib/gcc/../../lib/gcc/avr/4.3.3/include] ==> [E:/WinAVR/lib/gcc/avr/4.3.3/include]
+        collapse include dir [e:/winavr/lib/gcc/../../lib/gcc/avr/4.3.3/include-fixed] ==> [E:/WinAVR/lib/gcc/avr/4.3.3/include-fixed]
+        collapse include dir [e:/winavr/lib/gcc/../../avr/include] ==> [E:/WinAVR/avr/include]
+        implicit include dirs: [E:/WinAVR/lib/gcc/avr/4.3.3/include;E:/WinAVR/lib/gcc/avr/4.3.3/include-fixed;E:/WinAVR/avr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(avr-ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'C:/Users/HP/Desktop/SE_using_CMake/build/CMakeFiles/CMakeScratch/TryCompile-46g2xm']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/make.exe -f Makefile cmTC_bdb1c/fast]
+        ignore line: [C:/MinGW/bin/make.exe  -f CMakeFiles/cmTC_bdb1c.dir/build.make CMakeFiles/cmTC_bdb1c.dir/build]
+        ignore line: [make[1]: Entering directory 'C:/Users/HP/Desktop/SE_using_CMake/build/CMakeFiles/CMakeScratch/TryCompile-46g2xm']
+        ignore line: [Building C object CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [E:/WinAVR/bin/avr-gcc.exe   -mmcu=atmega32 -DF_CPU=8000000 -std=gnu99 -O2 -Wall    -v -o CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../gcc-4.3.3/configure --enable-win32-registry=WinAVR-20100110 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c c++ objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20100110' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse']
+        ignore line: [Thread model: single]
+        ignore line: [gcc version 4.3.3 (WinAVR 20100110) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=atmega32' '-DF_CPU=8000000' '-std=gnu99' '-O2' '-Wall' '-v' '-o' 'CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj' '-c']
+        ignore line: [ e:/winavr/bin/../libexec/gcc/avr/4.3.3/cc1.exe -quiet -v -imultilib avr5 -iprefix e:\\winavr\\bin\\../lib/gcc/avr/4.3.3/ -DF_CPU=8000000 C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mmcu=atmega32 -auxbase-strip CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj -O2 -Wall -std=gnu99 -version -o C:\\Users\\HP\\AppData\\Local\\Temp/ccJNPI36.s]
+        ignore line: [ignoring nonexistent directory "e:/winavr/lib/gcc/../../avr/sys-include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ e:\\winavr\\bin\\../lib/gcc/avr/4.3.3/include]
+        ignore line: [ e:\\winavr\\bin\\../lib/gcc/avr/4.3.3/include-fixed]
+        ignore line: [ e:/winavr/lib/gcc/../../lib/gcc/avr/4.3.3/include]
+        ignore line: [ e:/winavr/lib/gcc/../../lib/gcc/avr/4.3.3/include-fixed]
+        ignore line: [ e:/winavr/lib/gcc/../../avr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C (WinAVR 20100110) version 4.3.3 (avr)]
+        ignore line: [	compiled by GNU C version 3.4.5 (mingw-vista special r3)  GMP version 4.2.3  MPFR version 2.4.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 61d68a374065d489330774d2533cbbdf]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=atmega32' '-DF_CPU=8000000' '-std=gnu99' '-O2' '-Wall' '-v' '-o' 'CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj' '-c']
+        ignore line: [ e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/as.exe -mmcu=atmega32 -o CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj C:\\Users\\HP\\AppData\\Local\\Temp/ccJNPI36.s]
+        ignore line: [COMPILER_PATH=e:/winavr/bin/../libexec/gcc/avr/4.3.3/]
+        ignore line: [e:/winavr/bin/../libexec/gcc/]
+        ignore line: [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/]
+        ignore line: [LIBRARY_PATH=e:/winavr/bin/../lib/gcc/avr/4.3.3/avr5/]
+        ignore line: [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/]
+        ignore line: [e:/winavr/bin/../lib/gcc/avr/4.3.3/]
+        ignore line: [e:/winavr/bin/../lib/gcc/]
+        ignore line: [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=atmega32' '-DF_CPU=8000000' '-std=gnu99' '-O2' '-Wall' '-v' '-o' 'CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj' '-c']
+        ignore line: [Linking C executable cmTC_bdb1c]
+        ignore line: [E:/WinAVR/bin/avr-gcc.exe -mmcu=atmega32 -DF_CPU=8000000 -std=gnu99 -O2 -Wall   -v "CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj"  -o cmTC_bdb1c ]
+        ignore line: [Using built-in specs.]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../gcc-4.3.3/configure --enable-win32-registry=WinAVR-20100110 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c c++ objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20100110' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse']
+        ignore line: [Thread model: single]
+        ignore line: [gcc version 4.3.3 (WinAVR 20100110) ]
+        ignore line: [COMPILER_PATH=e:/winavr/bin/../libexec/gcc/avr/4.3.3/]
+        ignore line: [e:/winavr/bin/../libexec/gcc/]
+        ignore line: [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/]
+        ignore line: [LIBRARY_PATH=e:/winavr/bin/../lib/gcc/avr/4.3.3/avr5/]
+        ignore line: [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/]
+        ignore line: [e:/winavr/bin/../lib/gcc/avr/4.3.3/]
+        ignore line: [e:/winavr/bin/../lib/gcc/]
+        ignore line: [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=atmega32' '-DF_CPU=8000000' '-std=gnu99' '-O2' '-Wall' '-v' '-o' 'cmTC_bdb1c']
+        link line: [ e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/ld.exe -m avr5 -o cmTC_bdb1c e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o -Le:/winavr/bin/../lib/gcc/avr/4.3.3/avr5 -Le:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5 -Le:/winavr/bin/../lib/gcc/avr/4.3.3 -Le:/winavr/bin/../lib/gcc -Le:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc]
+          arg [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/bin/ld.exe] ==> ignore
+          arg [-m] ==> ignore
+          arg [avr5] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_bdb1c] ==> ignore
+          arg [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o] ==> obj [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o]
+          arg [-Le:/winavr/bin/../lib/gcc/avr/4.3.3/avr5] ==> dir [e:/winavr/bin/../lib/gcc/avr/4.3.3/avr5]
+          arg [-Le:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5] ==> dir [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5]
+          arg [-Le:/winavr/bin/../lib/gcc/avr/4.3.3] ==> dir [e:/winavr/bin/../lib/gcc/avr/4.3.3]
+          arg [-Le:/winavr/bin/../lib/gcc] ==> dir [e:/winavr/bin/../lib/gcc]
+          arg [-Le:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib] ==> dir [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib]
+          arg [CMakeFiles/cmTC_bdb1c.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+        collapse obj [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o] ==> [E:/WinAVR/avr/lib/avr5/crtm32.o]
+        collapse library dir [e:/winavr/bin/../lib/gcc/avr/4.3.3/avr5] ==> [E:/WinAVR/lib/gcc/avr/4.3.3/avr5]
+        collapse library dir [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5] ==> [E:/WinAVR/avr/lib/avr5]
+        collapse library dir [e:/winavr/bin/../lib/gcc/avr/4.3.3] ==> [E:/WinAVR/lib/gcc/avr/4.3.3]
+        collapse library dir [e:/winavr/bin/../lib/gcc] ==> [E:/WinAVR/lib/gcc]
+        collapse library dir [e:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib] ==> [E:/WinAVR/avr/lib]
+        implicit libs: [gcc;c;gcc]
+        implicit objs: [E:/WinAVR/avr/lib/avr5/crtm32.o]
+        implicit dirs: [E:/WinAVR/lib/gcc/avr/4.3.3/avr5;E:/WinAVR/avr/lib/avr5;E:/WinAVR/lib/gcc/avr/4.3.3;E:/WinAVR/lib/gcc;E:/WinAVR/avr/lib]
+        implicit fwks: []
+      
+      
+...
